@@ -11,12 +11,12 @@ import MobileNavigation from "../MobileNavigation/MobileNavigation";
 export default function Header() {
     return (
         <header>
-            <div className="container mx-auto">
+            <div className="container mx-auto ">
                 <div className="flex justify-between items-center">
                     <Logo />
-                    <div className="flex">
+                    <div className="flex items-center gap-x-6">
                         {/* Navigation */}
-                        <Nav />
+                        <Nav containerStyles='xl:flex items-center gap-x-8 hidden' />
 
                          {/* Theme Toggle */}
                         <ThemeToggler />
