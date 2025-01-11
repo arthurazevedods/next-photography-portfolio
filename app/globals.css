@@ -19,6 +19,7 @@ body {
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
+    --tertiary: 327 64% 97%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 40% 96.1%;
@@ -72,4 +73,29 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.h1 {
+  @apply text-6xl xl:text-[720px] xl:leading-[80px] tracking-[-2px] font-bold;
+}
+
+.h2 {
+  @apply text-4xl  font-bold;
+}
+
+.h3 {
+  @apply text-3xl  font-bold;
+}
+
+.h4 {
+  @apply text-[22px]  font-bold;
+}
+
+
+.subtitle{
+  @apply text-muted-foreground text-lg mb-8 font-light;
+}
+
+.section-title {
+  @apply text-4xl text-primary font-bold relative w-max flex items-center justify-between gap-x-3;
 }
