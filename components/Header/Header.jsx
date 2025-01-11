@@ -20,19 +20,19 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []); 
 
+  const headerClasses = `${header ? 'py-4 bg-white shadow-lg dark:bg-accent' : 'py-6 dark:bg-transparent'} sticky top-0 z-30 transition-all`;
+
   return (
-    <header 
-      className={`${header ? 'py-4 bg-white shadow-lg dark:bg-accent' : 'py-6 dark:bg-transparent'} sticky top-0 z-30 transition-all ${pathname === '/' && 'bg-[#fff]'}`}
-    >
-      <div className="container mx-auto">
+    <header className={`${headerClasses} ${pathname === '/' ? 'bg-[#fff]' : ''}`}>
+      <div className="container  max-w-screen-xl mx-auto">
         <div className="flex justify-between items-center">
           <Logo />
           <div className="flex items-center gap-x-6">
             {/* Navigation */}
             <Nav 
-              containerStyles='xl:flex items-center gap-x-8 hidden' 
-              linkStyles='relative hover:text-primary transition-all'
-              underlineStyles='bg-primary w-full absolute left-0 top-full h-[2px]'
+              containerStyles="xl:flex items-center gap-x-8 hidden" 
+              linkStyles="relative hover:text-primary transition-all"
+              underlineStyles="bg-primary w-full absolute left-0 top-full h-[2px]"
             />
 
             {/* Theme Toggle */}
