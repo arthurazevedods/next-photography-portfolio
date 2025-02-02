@@ -4,7 +4,7 @@ import Link from "next/link";
 import { RiMailAddLine, RiBookmark3Fill, RiUserFollowFill  } from "react-icons/ri";
 import { MdAddAPhoto } from "react-icons/md";
 import Socials from '../Socials/Socials';
-import HeroImage from '../HeroImage.jsx/HeroImage';
+import HeroImage from '../HeroImage/HeroImage';
 import Badge from '../Badge/Badge';
 
 export default function Hero() {
@@ -31,7 +31,7 @@ export default function Hero() {
                         </label>
                         <Input type="email" id="email" placeholder="Email" />
                         <Link href="/contato">
-                            <Button className="gap-x-2 bg-black">
+                            <Button className="gap-x-2 bg-black dark:bg-white dark:text-black">
                                 Subscribe <RiMailAddLine size={18} />
                             </Button>
                         </Link>
